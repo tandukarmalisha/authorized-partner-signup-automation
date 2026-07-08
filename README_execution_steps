@@ -1,0 +1,50 @@
+#Authorized Partner Signup Automation
+
+#Prerequisites
+
+Before running the project, ensure the following are installed:
+
+- Node.js 
+- npm
+- Git
+
+#Installation
+
+1. Clone the Repository:
+git clone 
+cd AuthorizedPartner
+
+2. Install dependencies
+npm install
+
+3. Install Playwright 
+npm install playwright@latest
+
+# Running the test:
+
+Run all tests:
+npx playwright test tests
+
+Run in headless mode:(The given code is configured in headed mode)
+npx playwright test --headless
+
+# Test Data:
+The project uses Faker to generate random dynamic test data such as:
+- Name
+- Email
+- Phone Number
+- Agency Details
+- Professional Experience
+- Registration Number
+
+Mail and OTP are retrieved automatically using the Mail.tm API
+
+# Reports:
+To view the Playwright HTML report:
+
+npx playwright show-report
+
+# Notes:
+- Internet access is required for Mail.tm email creation and OTP retrieval.
+- Sample upload files should be placed inside the 'test-data/' directory.
+- Ensure Playwright browsers are installed before executing the tests.
