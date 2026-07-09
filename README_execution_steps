@@ -1,6 +1,12 @@
 #Authorized Partner Signup Automation
 
-#Prerequisites
+# Language used:
+TypeScript
+
+#Framework used:
+Playwright
+
+#Prerequisites:
 
 Before running the project, ensure the following are installed:
 
@@ -8,7 +14,7 @@ Before running the project, ensure the following are installed:
 - npm
 - Git
 
-#Installation
+#Installation:
 
 1. Clone the Repository:
 git clone 
