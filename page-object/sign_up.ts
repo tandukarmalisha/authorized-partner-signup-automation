@@ -70,16 +70,13 @@ readonly submitButton: Locator;
         this.visaProcessing = page.getByRole('checkbox', { name: 'Visa Processing' })
         this.testPreparation = page.getByRole('checkbox', { name: 'Test Prepration' })
         this.professionalNextButton = page.getByRole('button', { name: 'Next'})
-        //this.registrationNumber = page.locator('input[name="registration_number"]')
         this.registrationNumber = page.getByRole('textbox', { name: 'Business Registration Number' })
         this.preferredCountry = page.getByText('Select Your Preferred Countries', { exact: true })
         this.universities = page.getByRole('checkbox', { name: 'Universities' })
         this.colleges = page.getByRole('checkbox', { name: 'Colleges' })
         this.vocationalSchool = page.getByRole('checkbox', { name: 'Vocational School' })
         this.other = page.getByRole('checkbox', { name: 'Other' })
-        //this.certification = page.locator('select[name="certification_details"]')
         this.certification = page.getByRole('textbox', { name: 'Certification Details (Optional)' })
-        //this.uploadInputs = page.locator('input[type="file"]')
         this.uploadInputs = page.locator('input[type="file"]');
         this.submitButton = page.getByRole('button', { name: 'Submit' })
     }
@@ -92,7 +89,7 @@ readonly submitButton: Locator;
     await this.page.waitForURL("https://authorized-partner.vercel.app/register");
     }
     async clickTermsAndConditionCheckbox(){
-        await this.page.waitForTimeout(1000);
+        await this.page.waitForTimeout(5000);
         await this.termsAndConditionCheckbox.click();
         await this.termsAndConditionCheckbox.isChecked();
         await expect(this.continueButton).toBeEnabled();
