@@ -31,7 +31,7 @@ npm install playwright@latest
 Run all tests:
 npx playwright test tests
 
-Run in headless mode:(The given code is configured in headed mode)
+Run in headless mode:(The given code is configured to be in headed mode)
 npx playwright test --headless
 
 # Test Data:
